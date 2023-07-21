@@ -1,6 +1,7 @@
 :root{
   --theme:rgb(49, 83, 238);
   --bg-color:rgb(246, 255, 245);
+  --hover-theme:rgb(47, 71, 182);
 }
 
 *{
@@ -115,7 +116,7 @@ body{
 }
 
 .buttons .button:hover{
-  background-color: var(--theme);
+  background-color: var(--hover-theme);
   
 }
 
