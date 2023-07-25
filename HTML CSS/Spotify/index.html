@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>R Tunes</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="/images/logo.png">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="brand"><img src="images/logo.png " alt="Logo"><span style="font-weight: 500;font-size: larger;">R
+          Tunes</span></li>
+      <li>Home</li>
+      <li>About</li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="songlist">
+      <h1>Welcome, Music To Get You Started</h1>
+      <div class="songitemscontainer">
+        <div class="song-item">
+          <img src="/covers/1.jpg" alt="1">
+          <span class="songname">Let me Love You</span>
+          <span class="songlistplay"><span class="timestamp">03:50 <i id="1"
+                class="fa-regular songitemplay fa-circle-play"></i></span></span>
+        </div>
+        <div class="song-item">
+          <img src="/covers/2.jpg" alt="1">
+          <span class="songname">Let me Love You</span>
+          <span class="songlistplay"><span class="timestamp">03:55 <i id="2"
+                class="fa-regular songitemplay fa-circle-play"></i></span></span>
+        </div>
+        <div class="song-item">
+          <img src="/covers/3.jpg" alt="1">
+          <span class="songname">Let me Love You</span>
+          <span class="songlistplay"><span class="timestamp">03:14 <i id="3"
+                class="fa-regular songitemplay fa-circle-play"></i></span></span>
+        </div>
+        <div class="song-item">
+          <img src="/covers/4.jpg" alt="1">
+          <span class="songname">Let me Love You</span>
+          <span class="songlistplay"><span class="timestamp">04:12 <i id="4"
+                class="fa-regular songitemplay fa-circle-play"></i></span></span>
+        </div>
+        <div class="song-item">
+          <img src="/covers/5.jpg" alt="1">
+          <span class="songname">Let me Love You</span>
+          <span class="songlistplay"><span class="timestamp">02:49 <i id="5"
+                class="fa-regular songitemplay fa-circle-play"></i></span></span>
+        </div>
+        <div class="song-item">
+          <img src="/covers/6.jpg" alt="1">
+          <span class="songname">Let me Love You</span>
+          <span class="songlistplay"><span class="timestamp">02:20 <i id="6"
+                class="fa-regular songitemplay fa-circle-play"></i></span></span>
+        </div>
+        <div class="song-item">
+          <img src="/covers/7.jpg" alt="1">
+          <span class="songname">Let me Love You</span>
+          <span class="songlistplay"><span class="timestamp">02:34 <i id="7"
+                class="fa-regular songitemplay fa-circle-play"></i></span></span>
+        </div>
+        <div class="song-item">
+          <img src="/covers/8.jpg" alt="1">
+          <span class="songname">Let me Love You</span>
+          <span class="songlistplay"><span class="timestamp">02:33 <i id="8"
+                class="fa-regular songitemplay fa-circle-play"></i></span></span>
+        </div>
+
+      </div>
+    </div>
+    <div class="songbanner">
+      <img src="/images/new.jpg" alt="bg" id="bg-img">
+    </div>
+  </div>
+
+  <div class="bottom">
+    <input class="mainslider" value=0 type="range" name="range" id="myprogressbar" min="0" max="100">
+    <div class="icons">
+      <!-- fontawesome icons -->
+      <i class="fa-solid fa-backward-step fa-3x" id="previous"></i>
+      <i class="fa-solid fa-circle-play fa-3x" id="masterPlay"></i>
+      <i class="fa-solid fa-forward-step fa-3x" id="next"></i>
+    </div>
+    <div class="songinfo">
+      <img src="/images/Nt6v.gif" width="42px" alt="" id="gif"><span style="color: #1DB954;">Now Playing :
+        &nbsp;</span><span id="mastersongname">As It Was</span>
+    </div>
+    <div class="dura">
+      <span class="updDur"></span><span></span><span class="constDur"></span>
+    </div>
+    <div class="vol">
+      <span id="volicon"><i id="voli" class="fa-solid fa-volume-xmark"></i></span>
+      <input value=0 type="range" name="range" id="volumeslider" min="0" max="100">
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="https://kit.fontawesome.com/7382879f33.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
