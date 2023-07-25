@@ -2,7 +2,7 @@ console.log("Welcome to spotify")
 
 //Initailize the variables
 let songIndex = 1;
-let audioElement = new Audio('/songs/1.mp3');
+let audioElement = new Audio('./songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay')
 let myprogressbar = document.getElementById('myprogressbar')
 let volumebar = document.getElementById('volumeslider')
@@ -17,14 +17,14 @@ let voli = document.getElementById('voli')
 audioElement.volume=0;
 
 let songs = [
-  {songName: "As It Was", filePath: "/songs/1.mp3", coverPath: "/covers/1.jpg"},
-  {songName: "Heat Waves", filePath: "/songs/2.mp3", coverPath: "/covers/2.jpg"},
-  {songName: "Afterthought", filePath: "/songs/3.mp3", coverPath: "/covers/3.jpg"},
-  {songName: "Last day on earth", filePath: "/songs/4.mp3", coverPath: "/covers/4.jpg"},
-  {songName: "Let Me Down Slowly", filePath: "/songs/5.mp3", coverPath: "/covers/5.jpg"},
-  {songName: "Living Life, In The Night", filePath: "/songs/6.mp3", coverPath: "/covers/6.jpg"},
-  {songName: "I Ain't Worried", filePath: "/songs/7.mp3", coverPath: "/covers/7.jpg"},
-  {songName: "Past Lives", filePath: "/songs/8.mp3", coverPath: "/covers/8.jpg"},
+  {songName: "As It Was", filePath: "./songs/1.mp3", coverPath: "./covers/1.jpg"},
+  {songName: "Heat Waves", filePath: "./songs/2.mp3", coverPath: "./covers/2.jpg"},
+  {songName: "Afterthought", filePath: "./songs/3.mp3", coverPath: "./covers/3.jpg"},
+  {songName: "Last day on earth", filePath: "./songs/4.mp3", coverPath: "./covers/4.jpg"},
+  {songName: "Let Me Down Slowly", filePath: "./songs/5.mp3", coverPath: "./covers/5.jpg"},
+  {songName: "Living Life, In The Night", filePath: "./songs/6.mp3", coverPath: "./covers/6.jpg"},
+  {songName: "I Ain't Worried", filePath: "./songs/7.mp3", coverPath: "./covers/7.jpg"},
+  {songName: "Past Lives", filePath: "./songs/8.mp3", coverPath: "./covers/8.jpg"},
 ]
 
 songitems.forEach((element, i)=>{
@@ -42,7 +42,7 @@ masterPlay.addEventListener('click', ()=>{
     document.getElementById(songIndex).classList.remove('fa-circle-play')
     document.getElementById(songIndex).classList.add('fa-circle-pause')
     gif.style.opacity=1;
-    document.getElementById('bg-img').src=`/covers/${songIndex}.jpg`
+    document.getElementById('bg-img').src=`./covers/${songIndex}.jpg`
     
     
   }
@@ -53,7 +53,7 @@ masterPlay.addEventListener('click', ()=>{
     gif.style.opacity=0;
     document.getElementById(songIndex).classList.add('fa-circle-play')
     document.getElementById(songIndex).classList.remove('fa-circle-pause')
-    document.getElementById('bg-img').src=`/covers/${songIndex}.jpg`
+    document.getElementById('bg-img').src=`./covers/${songIndex}.jpg`
 
   }
 })
@@ -95,7 +95,7 @@ Array.from(document.getElementsByClassName('songitemplay')).forEach((element)=>{
     gif.style.opacity=1;
     masterPlay.classList.add('fa-circle-pause')
     masterPlay.classList.remove('fa-circle-play')
-    document.getElementById('bg-img').src=`/covers/${songIndex}.jpg`
+    document.getElementById('bg-img').src=`./covers/${songIndex}.jpg`
 
   })
 })
@@ -107,7 +107,7 @@ document.getElementById('next').addEventListener('click',()=>{
   else{
     songIndex+=1;
   }
-   audioElement.src = `/songs/${songIndex}.mp3`;
+   audioElement.src = `./songs/${songIndex}.mp3`;
    mastersongname.innerText=songs[songIndex-1].songName;
     audioElement.currentTime=0;
     audioElement.play();
@@ -117,7 +117,7 @@ document.getElementById('next').addEventListener('click',()=>{
     makeallplays();
     document.getElementById(songIndex).classList.add('fa-circle-pause')
     document.getElementById(songIndex).classList.remove('fa-circle-play')
-    document.getElementById('bg-img').src=`/covers/${songIndex}.jpg`
+    document.getElementById('bg-img').src=`./covers/${songIndex}.jpg`
 
   })
 
@@ -128,7 +128,7 @@ document.getElementById('previous').addEventListener('click',()=>{
   else{
     songIndex-=1;
   }
-   audioElement.src = `/songs/${songIndex}.mp3`;
+   audioElement.src = `./songs/${songIndex}.mp3`;
     mastersongname.innerText=songs[songIndex-1].songName;
    audioElement.currentTime=0;
     audioElement.play();
@@ -138,7 +138,7 @@ document.getElementById('previous').addEventListener('click',()=>{
     makeallplays();
     document.getElementById(songIndex).classList.remove('fa-circle-play')
     document.getElementById(songIndex).classList.add('fa-circle-pause')
-    document.getElementById('bg-img').src=`/covers/${songIndex}.jpg`
+    document.getElementById('bg-img').src=`./covers/${songIndex}.jpg`
   })
 
 document.getElementById('volicon').addEventListener('click',()=>{

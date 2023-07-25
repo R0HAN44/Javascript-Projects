@@ -56,9 +56,6 @@ nav ul li:hover{
   margin: 23px auto;
   border-radius: 12px;
   padding: 34px;
-  background-image: url("/images/new.jpg") ;
-  background-repeat: no-repeat; 
-  background-position: right 20% bottom 50%;
   background: rgb(14, 2, 2);
   background: linear-gradient(0deg, rgba(14, 2, 2, 1) 75%, rgb(165, 42, 42) 100%);
   
