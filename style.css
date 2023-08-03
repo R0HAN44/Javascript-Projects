@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+h1{
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  
+}
+
+ol li{
+  font-size: 2rem;
+  text-decoration: none;
+  margin-left: 10px;
+  
+}
+a{
+  
+  text-decoration: none;
+  
+}
