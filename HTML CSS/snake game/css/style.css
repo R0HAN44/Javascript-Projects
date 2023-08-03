@@ -11,6 +11,15 @@
   align-items: center;
 }
 
+#score{
+  position: absolute;
+  top:9px;
+  right: 200px;
+  font-size: 39px;
+  font-weight: bold;
+  color: aliceblue;
+}
+
 #board{
   background: rgb(31, 29, 29);
   width: 90vmin;
@@ -21,13 +30,13 @@
 }
 
 .head{
-  background-color: rgb(236, 91, 91);
+  background-color: rgb(133, 247, 209);
 }
 
 .snake{
-  background-color: rgb(242, 245, 102);
+  background-color: rgb(133, 247, 209);
 }
 
 .food{
-  background-color: rgb(133, 247, 209);
+  background-color: rgb(242, 245, 102);
 }

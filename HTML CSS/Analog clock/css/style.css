@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+}
+
+
+body{
+  overflow: hidden;
+  background: linear-gradient(to left,rgb(124, 255, 124),rgb(235, 93, 93));
+}
+#clockContainer{
+  position: relative;
+  margin:100px auto;
+  background:url('/images/Analogue_clock_face.svg.png') no-repeat;
+  background-size: 100%;
+  height: 40vw;
+  width: 40vw;
+  z-index: 10;
+}
+
+#hour, #minute, #second{
+  position: absolute;
+  background: black;
+  border-radius: 10px;
+  transform-origin: bottom;
+}
+
+#hour{
+  width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.9%;
+    opacity: 0.8;
+    
+}
+#minute {
+width: 1.6%;
+  height: 30%;
+  top: 19%;
+  left: 49%;
+  opacity: 0.8;
+  
+}
+#second {
+width: 1%;
+  height: 40%;
+  top: 9%;
+  left: 49.3%;
+opacity: 0.8;
+background-color: red;
+z-index:9;
+}
+
+#clockContainer::after{
+  content: '';
+  position: absolute;
+  background-color: black;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  z-index: 100;
+}

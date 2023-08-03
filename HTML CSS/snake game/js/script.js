@@ -2,6 +2,7 @@ let inputDir = {x:0, y:0};
 let speed = 5;
 let score = 0;
 let lastPaintTime = 0;
+let sc = document.getElementById('score');
 let board = document.getElementById('board');
 let snakeArr = [
   {x:16, y:16}
@@ -18,8 +19,17 @@ function main(ctime){
   gameEngine();
 }
 
-function isCollide(sarr){
-  return false;
+function isCollide(snake){
+  //if snake collides with itself
+  for(let i = 1;i<snakeArr.length;i++){
+    if(snake[i].x === snake[0].x && snake[i].y === snake[0].y){
+      return true;
+    }
+  }
+    if(snake[0].x>=18 || snake[0].x<=0 ||snake[0].y>=18 || snake[0].y<=0){
+      return true;
+    }
+  
 }
 
 
@@ -34,6 +44,8 @@ function gameEngine(){
 
   //after eaten food increment score and regen food
   if(snakeArr[0].y === food.y && snakeArr[0].x === food.x){
+    score+=1;
+    sc.innerText = "Score:" + score;
     snakeArr.unshift({x: snakeArr[0].x + inputDir.x , y:snakeArr[0].y+inputDir.y});
     let a = 2;
     let b = 16;
