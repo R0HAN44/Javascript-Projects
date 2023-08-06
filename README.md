@@ -1,7 +1,7 @@
 # Clones
 
 
-http://example.com](https://r0han44.github.io/Clones/
+https://r0han44.github.io/Clones/
 
 Music app - https://stately-bublanina-e59283.netlify.app/html%20css/spotify/
 
