@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Permanent Marker',cursive;
+font-family: 'Poppins',sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #18191a;
+}
+
+.app{
+  background: rgb(255, 255, 255, 0.8);
+  width: 90%;
+  max-width: 600px;
+  margin: 100px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+  
+}
+
+.app h1{
+  font-size: 25px;
+  color: black;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+  padding-bottom: 30px ;
+}
+
+.quiz{
+  padding: 20px 0;
+}
+.quiz h2{
+  font-size: 18px;
+  color: black;
+  font-weight: 600;
+}
+.btn{
+  background: rgb(255, 255, 255, 0.4);
+  color: black;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.btn:hover:not([disabled]){
+  background: rgb(83, 79, 79);
+  color: white;
+
+}
+.btn:disabled{
+  cursor: no-drop;
+}
+#next-btn{
+  background: #2b2e33;
+  color: #fff;
+  font-weight: 500;
+  width: 150px;
+  border: 0;
+  padding: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px ;
+  cursor: pointer;
+  display: none;
+}
+
+.cor{
+  background: rgb(131, 243, 131);
+}
+.incor{
+  background: rgb(253, 128, 128);
+}
