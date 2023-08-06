@@ -1,6 +1,6 @@
-# Hrml, Css, Javascript projects
+# Html, Css, Javascript projects
 
 
-Hrml, Css, Javascript projects :- https://r0han44.github.io/Clones/
+Html, Css, Javascript projects :- https://r0han44.github.io/Clones/
 
 
