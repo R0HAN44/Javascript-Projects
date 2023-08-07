@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Permanent Marker',cursive;
+font-family: 'Poppins',sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: rgb(0, 0, 0,0.9);
+  color: rgb(241, 249, 255);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.container{
+  background-color: rgb(121, 23, 201);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  border-radius: 1rem;
+  border: 2px solid black;
+}
+
+.container h3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+  padding: 1rem;
+  background-color: rgb(255, 252, 249);
+  color: black;
+  border: 2px solid black;
+  border-radius: 1rem;
+  
+}
+
+.container h3 span{
+  margin-left: 2rem;
+}
+
+.form{
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 1rem;
+  column-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
+.icon{
+  width: 2rem;
+}
+.icon:hover {
+  cursor: pointer;
+}
+
+.copied{
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-radius: 1rem;
+  padding: 0.4rem;
+  font-size: small;
+  display: none;
+}
+
+
+
+.val{
+  display: flex;
+  
+}
+
+#charNumber{
+  width: 2.5rem;
+}
+
+#charRange {
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #868585;
+  outline: none;
+  transition: opacity .2s;
+  opacity: 0.8;
+  margin-top: 10px;
+  margin-right: 0.1rem;
+}
+
+#charRange::-webkit-slider-thumb {
+
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #f7f4ff;
+  border-radius: 50%;
+  outline: black;
+  border: 1px solid black;
+}
+
+#charRange:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.form button{
+  background-color: rgb(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  margin-top: 1rem;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 1rem;
+}
+
+.form button:hover{
+  background-color: rgb(0, 0, 0, 1);
+  cursor: pointer;
+}

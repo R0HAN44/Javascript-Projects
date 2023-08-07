@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+/* font-family: 'Poppins',sans-serif; */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(0, 0, 0, 0.9);
+  color: #fff;
+  padding-top: 4%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.container h1{
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.container h1 img{
+  width: 60px;
+}
+
+.container button img {
+  width: 25px;
+  margin-right: 8px;
+}
+
+.container button{
+  display: flex;
+  align-items: center;
+  background:linear-gradient(135deg, #61CEED, #E4B64D);
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  outline: 0;
+  border: 0;
+  border-radius: 40px;
+  padding: 15px 25px;
+  margin: 30px 0 20px;
+  cursor: pointer;
+}
+
+.input-box{
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  min-height: 150px;
+  background: linear-gradient(135deg, rgb(147, 221, 241), rgb(240, 207, 132));
+  color: black;
+  padding: 20px;
+  margin: 20px 0;
+  outline: none;
+  border-radius: 5px;
+}
+
+.input-box img{
+  width: 25px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.notes-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+  grid-column-gap: 20px;
+}
