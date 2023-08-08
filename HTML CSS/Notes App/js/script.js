@@ -39,7 +39,7 @@ notesContainer.addEventListener('click', (e) =>{
 document.addEventListener('keydown', e =>{
   if(e.key === "Enter"){
     document.execCommand("insertLineBreak");
-    event.preventDefault();
+    e.preventDefault();
   }
 })
 
