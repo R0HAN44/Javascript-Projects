@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,500&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+
+
+/* font-family: 'Poppins',sans-serif;
+font-family: 'Montserrat',sans-serif; */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background: #d4fabb;
+}
+
+.container{
+  background: white;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 20px 0px rgba(0,0,0,.15);
+  
+}
+
+.container h1{
+  font-size: 32px;
+  margin-bottom: 40px;
+  position: relative;
+  
+}
+
+.container h1::after{
+  content: "";
+  width: 80px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgb(229, 23, 23);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.container blockquote{
+  font-size: 26px;
+  min-height: 110px;
+}
+.container blockquote::before,
+.container blockquote::after{
+  content: '"';
+}
+
+.container span{
+  display: block;
+  margin-top: 10px;
+  float: right;
+  position: relative;
+}
+
+.container span::before{
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: rgb(40, 229, 23);
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+
+.container div{
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.container button{
+  background-color: #d4fabb;
+  color: rgb(0, 0, 0);
+  border-radius: 25px;
+  border: 1px solid rgb(0, 0, 0,.9);
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container button:nth-child(2) {
+  background: transparent;
+  border: 1px solid rgb(0, 153, 255);
+  
+}
+
+.fa-twitter{
+  color: rgb(0, 153, 255);
+  margin-right: 10px;
+}
