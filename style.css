@@ -8,14 +8,19 @@ body{
   padding: 0;
   box-sizing: border-box;
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   font-family: 'Poppins', sans-serif;
   background-color: rgb(0, 0, 0, 0.9);
   color: white;
+  position: relative;
 }
+
+
 
 h1{
   text-align: center;
+  position: sticky;
+  top: 20px;
 }
 
 .container{
