@@ -7,12 +7,9 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  min-height: 100vh;
-  /* overflow: hidden; */
   font-family: 'Poppins', sans-serif;
   background-color: rgb(21, 19, 32);
   color: white;
-  position: relative;
 }
 
 .container{
