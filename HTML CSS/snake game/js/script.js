@@ -8,6 +8,7 @@ let food = {x:10, y:10};
 let score = 0;
 let board = document.getElementById("board");
 let scoreele = document.getElementById("score");
+
 // creating game loop to repaint window continuosly
 function main(ctime){
   window.requestAnimationFrame(main);

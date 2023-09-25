@@ -1,6 +1,6 @@
 const buttons = document.querySelectorAll('.btn');
 const slides = document.querySelectorAll('img');
-console.log(slides)
+
 let counter = 0;
 
 slides.forEach((slide,index)=>{
